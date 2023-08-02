@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: #343434;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 0.8s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Opacidade final 1 (totalmente visível) */
+    }
+}

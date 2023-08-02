@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+.titulo{
+    font-size: 25px;
+}
+.header,
+.navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+   
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 3.5em;
+    box-shadow: 2px 2px 2px #000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+.content{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: #b040ff;
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation_header a:hover{
+    color: #FFD700;
+}
+.active{
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+.carousel-inner img{
+    border-radius: 5px;   
+}
+.parallax-section {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000; 
+    text-align: center;
+    font-size: 24px;  opacity: 0; /* Começa com a opacidade 0 */
+    animation: fadeIn 2s forwards; /* Animação de entrada com duração de 1.5 segundos */
+}
+.parallax-content h2 {
+    font-size: 48px;
+    font-weight: bold; 
+}
+.parallax-content p {
+    font-size: 20px; 
+}
+section{
+    height: 800px;
+}
