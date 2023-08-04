@@ -99,6 +99,8 @@ footer
     margin-top: 2000px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #000;
+    color: #fff;
 }
 .footer-link 
 {
