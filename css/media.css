@@ -17,9 +17,8 @@
 @keyframes showSidebar {
     from {margin-left: -100vw;}
     to {margin-left: -10vw;}
-}
-@keyframes fadeIn {
+}@keyframes fadeIn {
     to {
-        opacity: 1; /* Opacidade final 1 (totalmente visível) */
+        opacity: 1; 
     }
 }
