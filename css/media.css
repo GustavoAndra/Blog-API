@@ -1,13 +1,13 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .navigation_header{
         position: absolute;
-        flex-direction: column !important;
+        flex-direction: column;
         top: 0;
-        background: #343434;
+        background: #fff;
         height: 100%;
-        width: 35vw;
-        padding: 1em;
-        animation-duration: 0.8s;
+        width: 90vw;
+        
+        animation-duration: 0.3s;
         margin-left: -100vw;
     }
     .btn_icon_header{

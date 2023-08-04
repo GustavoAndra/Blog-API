@@ -15,7 +15,7 @@
     justify-content: space-between;
     padding: 0 10%;
     height: 3.5em;
-    box-shadow: 2px 2px 2px #000;
+   
     margin-bottom: 20px;
     margin-top: 10px;
 }.navigation_header{
@@ -78,4 +78,12 @@
     transform: scale(0.9) translateY(-20px);
 }.card:hover {
     transform: scale(0.9) translateZ(-20px);
+}
+article h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article p{
+    color: #4e4257;
+   
 }
