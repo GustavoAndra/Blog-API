@@ -12,6 +12,9 @@
     .btn_icon_header{
         display: block;
     }
+    .footer{
+        margin-top: 5700px;
+    }
 }
 @keyframes showSidebar {
     from {margin-left: -100vw;}
