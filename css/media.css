@@ -21,8 +21,3 @@
         opacity: 1; 
     }
 }
-@media screen and (max-width: 567px) {
-    footer{
-        margin-top: 6250px;
-    }
-}

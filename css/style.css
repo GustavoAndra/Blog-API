@@ -75,7 +75,7 @@
 section{
     margin-top: 20px;
     height: 300px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 .card{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
@@ -92,73 +92,4 @@ article h2{
 }
 article p{
     color: #4e4257;
-}
-footer 
-{
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 2000px;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.50) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: #000;
-    color: #fff;
-}
-.footer-link 
-{
-    text-decoration: none;
-    margin-bottom: 50px;  
-}
-#footer_content 
-{
-    background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
-}
-#footer_contacts p {
-  margin-left: 80px;   
-}
-#footer_social_media {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-} 
-#footer_social_media .footer-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--color-neutral-40);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-    margin-bottom: 25px;
-}
-.footer-list .footer-link {
-    color: var(--color-neutral-30);
-    transition: all 0.4s;
-}
-.footer-list .footer-link:hover {
-    color: #7f37c9;
-}
-#footer_subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-#footer_subscribe p {
-    color: var(--color-neutral-30);
-}
-#footer_copyright {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-neutral-0);
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
 }
