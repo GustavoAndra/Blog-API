@@ -15,13 +15,9 @@
     justify-content: space-between;
     padding: 0 10%;
     height: 3.5em;
-   
     margin-bottom: 20px;
     margin-top: 10px;
-}nav{
-    position: fixed;
-}
-.navigation_header{
+}.navigation_header{
     gap: 3em;
     z-index: 2;
 }.content{
@@ -41,8 +37,7 @@
 }.active{
     padding: 10px;
     border-radius: 10px;
-}
-.btn_icon_header{
+}.btn_icon_header{
     background: transparent;
     border: none;
     color: #000;
@@ -71,13 +66,11 @@
     color: #fff;
     font-size: 20px; 
     font-weight: bold; 
-}
-section{
+}section{
     margin-top: 20px;
     height: 300px;
     margin-bottom: 100px;
-}
-.card{
+}.card{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     transform: scale(0.9) translateY(-20px);
     border-radius: 10px 10px 0 0;
@@ -85,44 +78,36 @@ section{
     transform: scale(0.9) translateZ(-20px);
 }.card img{
     border-radius: 10px 10px 0 0;
-}
-article h2{
+}article h2{
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-}
-article p{
+}article p{
     color: #4e4257;
 }.container{
 	max-width: 1170px;
 	margin:auto;
-}
-.row{
+}.row{
 	display: flex;
 	flex-wrap: wrap;
-}
-ul{
+}ul{
 	list-style: none;
-}
-.footer{
+}.footer{
 	background-color: #fff;
     color: #000;
     padding: 70px 0;
     margin-top: 2000px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.footer-col{
+}.footer-col{
    width: 25%;
    padding: 0 15px;
-}
-.footer-col h4{
+}.footer-col h4{
 	font-size: 18px;
 	color: #000;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
-}
-.footer-col h4::before{
+}.footer-col h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -130,12 +115,10 @@ ul{
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
+	width: 90px;
+}.footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
-}
-.footer-col ul li a{
+}.footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #000;
@@ -143,12 +126,10 @@ ul{
 	font-weight: 300;
 	display: block;
 	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
+}.footer-col ul li a:hover{
 	color: #b040ff;
 	padding-left: 8px;
-}
-.footer-col .social-links a{
+}.footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -159,21 +140,7 @@ ul{
 	border-radius: 50%;
 	color: #000;
 	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
+}.footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #FFD700;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
 }
