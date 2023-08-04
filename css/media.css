@@ -6,7 +6,6 @@
         background: #fff;
         height: 100%;
         width: 90vw;
-        
         animation-duration: 0.3s;
         margin-left: -100vw;
     }
@@ -22,8 +21,8 @@
         opacity: 1; 
     }
 }
-@media screen and (max-width: 800px) {
-    .card{
-        margin-bottom: 150000000px;
+@media screen and (max-width: 567px) {
+    footer{
+        margin-top: 5700px;
     }
 }
