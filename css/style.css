@@ -68,16 +68,21 @@
     color: #fff;
     font-size: 20px; 
     font-weight: bold; 
-}section{
+}
+section{
     margin-top: 20px;
     height: 300px;
     margin-bottom: 80px;
+    position: relative;
 }
 .card{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     transform: scale(0.9) translateY(-20px);
+    border-radius: 10px 10px 0 0;
 }.card:hover {
     transform: scale(0.9) translateZ(-20px);
+}.card img{
+    border-radius: 10px 10px 0 0;
 }
 article h2{
     color: #000;
@@ -85,5 +90,4 @@ article h2{
 }
 article p{
     color: #4e4257;
-   
 }

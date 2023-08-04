@@ -22,3 +22,8 @@
         opacity: 1; 
     }
 }
+@media screen and (max-width: 800px) {
+    .card{
+        margin-bottom: 150000000px;
+    }
+}
