@@ -91,7 +91,8 @@
 	flex-wrap: wrap;
 }ul{
 	list-style: none;
-}.footer{
+}
+.footer{
 	background-color: #fff;
     color: #000;
     padding: 70px 0;
