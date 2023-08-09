@@ -24,7 +24,7 @@
     padding-top: 5em;
     text-align: center;
     height: 100vh;
-    transition: 1s;
+    transition: 4s;
 }.navigation_header a{
     text-decoration: none;
     color: #b040ff;
@@ -68,42 +68,78 @@
     font-weight: bold; 
 }section{
     margin-top: 20px;
-    height: 300px;
+    height: 800px;
     margin-bottom: 100px;
 }.card{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     transform: scale(0.9) translateY(-20px);
     border-radius: 10px 10px 0 0;
+    height: 100%;
 }.card:hover {
     transform: scale(0.9) translateZ(-20px);
 }.card img{
     border-radius: 10px 10px 0 0;
+}.card-img-top{
+    object-fit: cover; /* Dimensiona a imagem para preencher o espaço da imagem */
+    height: 250px; /* Define a altura da imagem */
+}.card-description {
+    max-height: 100px;
+    overflow: hidden;
+}.ver-mais {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}.button-50:focus {
+  text-decoration: none;
+}.button-50:hover {
+  text-decoration: none;
+}.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
 }article h2{
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }article p{
-    color: #4e4257;
-}.container{
-	max-width: 1170px;
-	margin:auto;
-}.row{
-	display: flex;
-	flex-wrap: wrap;
+    color: #000000;
 }ul{
 	list-style: none;
-}
-.footer{
-	background-color: #fff;
-    color: #000;
+}.footer{
+	background-color: #000;
+    color: #fff;
     padding: 70px 0;
-    margin-top: 2000px;
+    margin-top: 2300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
 }.footer-col{
    width: 25%;
    padding: 0 15px;
 }.footer-col h4{
 	font-size: 18px;
-	color: #000;
+    color: #fff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -122,7 +158,7 @@
 }.footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #000;
+    color: #FFD700;
 	text-decoration: none;
 	font-weight: 300;
 	display: block;
@@ -134,7 +170,7 @@
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: #fff;
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -143,5 +179,20 @@
 	transition: all 0.5s ease;
 }.footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #FFD700;
+	background-color: #e91e63;
+}#efeito{
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    color: #FF5733;
+    text-transform: uppercase;
+    animation: efeito 4s ease-in-out forwards;
+}h2{
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    animation: h2 6s ease-in-out forwards;
+}@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+canvas {
+  width: 100%;
 }

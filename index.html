@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gustavo">
     <meta name="description" content="API-BLOG">
-    <link rel="website icon" type="jpg" href="img/lgo.jpg">
+    <link rel="icon" type="image/x-icon" href="img/lgo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,8 @@
 </head>
   <body id="body">
     <header>
-       <div class="header" id="header">
+      <nav>
+         <div class="header" id="header">
           <button onclick="toggleSidebar()" class="btn_icon_header">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -32,21 +33,60 @@
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                   </svg>
               </button>
-              <a href="#header" >Home</a>
-              <a href="#novidades">Novidades</a>
-              <a href="#noticias">Notícias</a>             
+              <a href="#header" >Home</a> 
+              <a href="#noticias">Notícias</a>
+              <a href="#novidades">Novidades</a>             
               <a href="#footer">Contato</a>
           </div>
       </div>
+      </nav>
     </header>
+
     <main>
-      <section class="parallax-section" style="background-image: url('./img/Banner\ informática.jpg');">
+      <section class="parallax-section" style="background-image: url('./img/Banner\ informática.jpg');width: 100%;">
         <div class="parallax-content">
             <h2>Seja bem-vindo ao nosso blog</h2>
             <p>Aqui você encontrará <strong>informações incríveis e conteúdos interessantes</strong> sobre tecnologias do momento.</p>
         </div>
       </section>
-        <div id="novidades" class="container-fluid">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4" >
+                    <img src="./img/post4.jpg" style="width: 100%;height: 100%; "class="img-fluid " alt="Sempre evoluindo">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Atualizado a 3 minutos atrás</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./img/amazon.jpg" style="width: 100vw; border: none;" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Atualizado a 3 minutos atrás</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-6">
             <div class="card mb-3">
@@ -58,68 +98,54 @@
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text"><small class="text-muted">Atualizado a 3 minutos atrás</small></p>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
+
           <div class="col-md-6">
             <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="./img/amazon.jpg" style="width: 100vw; border: none;" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/hacker.jpg" style="width: 100vw; border: none;" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text"><small class="text-muted">Atualizado a 3 minutos atrás</small></p>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4" >
-                    <img src="./img/Post1.jpg"  style="width: 80vw; border: none;"class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./img/amazon.jpg" style="width: 100vw; border: none;" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        </div>     
+        </div>   
+
      <section id="noticias">
       <div class="container-fluid">
         <div class="row g-5">
           <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom" id="efeito">
+              5 melhores IAs para criar logo para site e YouTube
+            </h3> 
+            <article class="blog-post">
+              <h2 class="blog-post-title mb-1">Quer um logo para seu site ou canal no YouTube, mas não sabe como fazer um? Apresentamos 5 modelos de inteligência artificial para você</h2>
+              <p class="blog-post-meta" style=" color: #000;">Janeiro 2023 <a href="https://olhardigital.com.br/2023/07/24/internet-e-redes-sociais/5-melhores-ias-para-criar-logo-para-site-e-youtube/">Mark</a></p>
+      
+              <p>A identidade visual é um dos aspectos mais importantes para o sucesso de um site ou canal no YouTube. Um logo bem elaborado pode transmitir profissionalismo, criatividade e atrair a atenção do público-alvo. Nem todo mundo possui habilidades ou recursos para criar um logo do 0, mas com os avanços na inteligência artificial, agora é possível contar com poderosas ferramentas para criar logotipos personalizados de forma rápida e eficiente.</p>
+              <hr>
+              <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+              <h2>Atribuições dos profissionais de TI</h2>
+              <p>Arquitetos e Administradores de TI são profissionais essenciais para a escalabilidade de uma empresa, por isso é importante entender as suas atribuições e responsabilidades.</p>
+              <blockquote class="blockquote">
+                <p>Arquitetos de TI</p>
+              </blockquote>
+              <p>Diante da necessidade de agilizar e escalonar os seus negócios, as empresas acabam descobrindo que setor de tecnologia é um grande diferencial estratégico e se lançam na missão de fortalecer esta área. Acontece que a tecnologia ainda é território desconhecido de muitos, e montar as equipes é um desafio. Então, é necessário saber as atribuições dos profissionais de TI e, do mesmo modo, entender como esses papéis são fundamental no processo de aceleração das empresas.</p>          
+            </article> 
+            
             <h3 class="pb-4 mb-4 fst-italic border-bottom">
               5 melhores IAs para criar logo para site e YouTube
             </h3> 
@@ -136,8 +162,10 @@
                 <p>Arquitetos de TI</p>
               </blockquote>
               <p>Diante da necessidade de agilizar e escalonar os seus negócios, as empresas acabam descobrindo que setor de tecnologia é um grande diferencial estratégico e se lançam na missão de fortalecer esta área. Acontece que a tecnologia ainda é território desconhecido de muitos, e montar as equipes é um desafio. Então, é necessário saber as atribuições dos profissionais de TI e, do mesmo modo, entender como esses papéis são fundamental no processo de aceleração das empresas.</p>          
-            </article>            
-          </div>   
+            </article> 
+          </div>
+          
+          
           <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
               <div class="p-4 mb-3 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; transform: scale(0.9) translateZ(-20px);">
@@ -145,92 +173,92 @@
                 <p class="mb-0">Nosso site oferece uma <strong>ampla variedade de produtos</strong>, para que você encontre tudo o que precisa em um só lugar. Valorizamos a segurança e proteção dos seus dados pessoais, proporcionando uma experiência de compra confiável.</p>
               </div>
                 <h4 class="fst-italic">Games</h4>
-                <img src="./img/diferente.jpg" style="border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; margin-left: 50px;"  alt="">
+                <canvas id='canv'></canvas>
               </div>     
             </div>
           </div>
         </div>
       </div>
       <!--Imagens-->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="novidades" >
         <div class="col">
           <div class="card h-100">
-            <img src="./img/Post2.jpg" class="card-img-top" style="height: 70vh;" alt="">
+              <img src="#" class="card-img-top imgPost img-post2">
+              <div class="card-body">
+                  <h3 class="card-title titulo-post2"></h3>
+                  <h5 class="card-text text descricao-post2"></h5>
+                  <p class="card-text"><small class="text-body-secondary nome-criador2"></small></p>
+                  <button class="ver-mais">Ver Mais</button>
+              </div>
+          </div>
+      </div>      
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="#" class="card-img-top imgPost img-post1" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Realidade Estendida (XR)</h5>
-              <p class="card-text">A Realidade Estendida, que engloba a Realidade Virtual (VR), a Realidade Aumentada (AR) e a Realidade Mista (MR), continuará a evoluir em 2023. Ela terá aplicações em diversos setores, como treinamento, entretenimento, educação e saúde.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 5 minutos atrás</small>
+              <h3 class="card-title titulo-post1"></h3>
+              <h5 class="card-text text descricao-post1"></h5>
+              <p class="card-text"><small class="text-body-secondary nome-criador1"></small></p>
+              <p class="card-text"><small class="text-body-secondary Date1"></small></p>
+              <button class="ver-mais">Ver Mais</button>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card h-100">
-            <img src="./img/post3.jpg" class="card-img-top" alt="">
+            <img src="#" class="card-img-top imgPost img-post3" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Inteligência Artificial (IA)</h5>
-              <p class="card-text">A IA está se tornando uma parte essencial de muitas aplicações tecnológicas. Em 2023, veremos uma expansão da IA generalizada, onde ela estará presente em diversos dispositivos e serviços, desde assistentes virtuais mais avançados até análises de dados complexos e personalização em tempo real.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 4 minutos atrás</small>
+              <h3 class="card-title titulo-post3"></h3>
+              <h5 class="card-text text descricao-post3"></h5>
+              <p class="card-text"><small class="text-body-secondary nome-criador3"></small></p>
+              <button class="ver-mais">Ver Mais</button>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./img/post4.jpg" class="card-img-top"  alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Blockchain e Criptomoedas</h5>
-              <p class="card-text">Blockchain está se tornando cada vez mais presente em diversas indústrias. Em 2023, continuará a impulsionar a adoção de criptomoedas e a revolucionar setores como finanças, logística e votação eletrônica, devido à sua segurança, transparência e descentralização.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 3 minutos atrás</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="./img/post5.jpg" class="card-img-top" style="height: 70vh;" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Realidade Estendida (XR)</h5>
-              <p class="card-text">A Realidade Estendida, que engloba a Realidade Virtual (VR), a Realidade Aumentada (AR) e a Realidade Mista (MR), continuará a evoluir em 2023. Ela terá aplicações em diversos setores, como treinamento, entretenimento, educação e saúde.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 5 minutos atrás</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./img/post6.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Inteligência Artificial (IA)</h5>
-              <p class="card-text">A IA está se tornando uma parte essencial de muitas aplicações tecnológicas. Em 2023, veremos uma expansão da IA generalizada, onde ela estará presente em diversos dispositivos e serviços, desde assistentes virtuais mais avançados até análises de dados complexos e personalização em tempo real.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 4 minutos atrás</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./img/post7.jpg" class="card-img-top"  alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Blockchain e Criptomoedas</h5>
-              <p class="card-text">Blockchain está se tornando cada vez mais presente em diversas indústrias. Em 2023, continuará a impulsionar a adoção de criptomoedas e a revolucionar setores como finanças, logística e votação eletrônica, devido à sua segurança, transparência e descentralização.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualizado a 3 minutos atrás</small>
-            </div>
           </div>
         </div>
       </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="#" class="card-img-top imgPost img-post4" alt="...">
+            <div class="card-body">
+              <h3 class="card-title titulo-post4"></h3>
+              <h5 class="card-text text descricao-post4"></h5>
+              <p class="card-text"><small class="text-body-secondary nome-criador4"></small></p>
+              <button class="ver-mais">Ver Mais</button>
+            </div>
+          </div>
+          </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="#" class="card-img-top imgPost img-post5" alt="...">
+            <div class="card-body">
+              <h3 class="card-title titulo-post5"></h3>
+              <h5 class="card-text text descricao-post5"></h5>
+              <p class="card-text"><small class="text-body-secondary nome-criador5"></small></p>
+              <button class="ver-mais" data-index="1">Ver Mais</button>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="#" class="card-img-top imgPost img-post6" alt="...">
+          <div class="card-body">
+            <h3 class="card-title titulo-post6"></h3>
+            <h5 class="card-text text descricao-post6"></h5>
+            <p class="card-text"><small class="text-body-secondary nome-criador6"></small></p>
+            <button class="ver-mais" data-index="1">Ver Mais</button>
+          </div>
+        </div>
     </div>
+      </div>
 </section>
 </main>
+
 <footer class="footer">
   <div class="container-fluid">
     <div class="row">
@@ -276,5 +304,6 @@
 </footer>
   </body>
     <script src="./js/script.js"></script>
+    <script src="./js/consumo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
