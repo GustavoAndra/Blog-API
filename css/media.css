@@ -12,9 +12,6 @@
     .btn_icon_header{
         display: block;
     }
-    .footer{
-        margin-top: 7500px;
-    }
 }@media (min-width: 768px) {
     .button-50 {
       padding: 12px 50px;

@@ -1,49 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 *{
     margin: 0;
     padding: 0;
-}body{
+}
+body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-}.titulo{
+}
+.titulo{
     font-size: 25px;
-}.header, .navigation_header{
+}
+.header, .navigation_header{
     display: flex;
     flex-direction: row;
     align-items: center;
-}.header{
+}
+.header{
     background-color: #fff;
     justify-content: space-between;
     padding: 0 10%;
     height: 3.5em;
     margin-bottom: 20px;
     margin-top: 10px;
-}.navigation_header{
+}
+.navigation_header{
     gap: 3em;
     z-index: 2;
-}.content{
+}
+.content{
     padding-top: 5em;
     text-align: center;
     height: 100vh;
     transition: 4s;
-}.navigation_header a{
+}
+.navigation_header a{
     text-decoration: none;
     color: #b040ff;
     transition: 1s;
     font-weight: bold;
-}.navigation_header a:hover{
+}
+.navigation_header a:hover{
     color: #FFD700;
-}.navbar-nav .nav-link:hover::before {
+}
+.navbar-nav .nav-link:hover::before {
     opacity: 1;
-}.active{
+}
+.active{
     padding: 10px;
     border-radius: 10px;
-}.btn_icon_header{
+}
+.btn_icon_header{
     background: transparent;
     border: none;
     color: #000;
     cursor: pointer;
     display: none;
-}.parallax-section {
+}
+.parallax-section {
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -58,34 +71,42 @@
     text-align: center;
     font-size: 24px;  opacity: 0; /* Começa com a opacidade 0 */
     animation: fadeIn 4s forwards; /* Animação de entrada com duração de 1.5 segundos */
-}.parallax-content h2 {
+}
+.parallax-content h2 {
     font-size: 48px;
     color: #fff;
     font-weight: bold; 
-}.parallax-content p {
+}
+.parallax-content p {
     color: #fff;
     font-size: 20px; 
     font-weight: bold; 
-}section{
+}
+section{
     margin-top: 20px;
-    height: 800px;
     margin-bottom: 100px;
-}.card{
+}
+.card{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     transform: scale(0.9) translateY(-20px);
     border-radius: 10px 10px 0 0;
     height: 100%;
-}.card:hover {
+}
+.card:hover {
     transform: scale(0.9) translateZ(-20px);
-}.card img{
+}
+.card img{
     border-radius: 10px 10px 0 0;
-}.card-img-top{
+}
+.card-img-top{
     object-fit: cover; /* Dimensiona a imagem para preencher o espaço da imagem */
     height: 250px; /* Define a altura da imagem */
-}.card-description {
+}
+.card-description {
     max-height: 100px;
     overflow: hidden;
-}.ver-mais {
+}
+.ver-mais {
   appearance: button;
   background-color: #000;
   background-image: none;
@@ -110,41 +131,52 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-}.button-50:focus {
+}
+.button-50:focus {
   text-decoration: none;
-}.button-50:hover {
+}
+.button-50:hover {
   text-decoration: none;
-}.button-50:active {
+}
+.button-50:active {
   box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
   outline: 0;
-}.button-50:not([disabled]):active {
+}
+.button-50:not([disabled]):active {
   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   transform: translate(2px, 2px);
-}article h2{
+}
+article h2{
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-}article p{
+}
+article p{
     color: #000000;
-}ul{
+}
+ul{
 	list-style: none;
-}.footer{
+}
+footer{
 	background-color: #000;
     color: #fff;
     padding: 70px 0;
-    margin-top: 2300px;
+ 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
-}.footer-col{
+}
+.footer-col{
    width: 25%;
    padding: 0 15px;
-}.footer-col h4{
+}
+.footer-col h4{
 	font-size: 18px;
     color: #fff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
-}.footer-col h4::before{
+}
+.footer-col h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -153,9 +185,11 @@
 	height: 2px;
 	box-sizing: border-box;
 	width: 90px;
-}.footer-col ul li:not(:last-child){
+}
+.footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
-}.footer-col ul li a{
+}
+.footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
     color: #FFD700;
@@ -163,10 +197,12 @@
 	font-weight: 300;
 	display: block;
 	transition: all 0.3s ease;
-}.footer-col ul li a:hover{
+}
+.footer-col ul li a:hover{
 	color: #b040ff;
 	padding-left: 8px;
-}.footer-col .social-links a{
+}
+.footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -177,22 +213,25 @@
 	border-radius: 50%;
 	color: #000;
 	transition: all 0.5s ease;
-}.footer-col .social-links a:hover{
+}
+.footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #e91e63;
-}#efeito{
+}
+#efeito{
     font-family: "Arial", sans-serif;
     font-size: 30px;
     color: #FF5733;
     text-transform: uppercase;
     animation: efeito 4s ease-in-out forwards;
-}h2{
+}
+h2{
     font-family: "Arial", sans-serif;
     font-size: 30px;
     color: #000;
     text-transform: uppercase;
     animation: h2 6s ease-in-out forwards;
-}@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+}
 canvas {
   width: 100%;
 }
