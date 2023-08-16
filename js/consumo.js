@@ -6,7 +6,6 @@ function shuffleArray(array) {
     }
     return array;
   }  
-
   fetch("https://api-rest-post-diegocandido.herokuapp.com/postagens/") 
     .then(response => response.json()) // Converte a resposta para JSON
     .then(result => {

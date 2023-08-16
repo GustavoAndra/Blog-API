@@ -1,25 +1,36 @@
-const API_URL = "https://api-rest-post-diegocandido.herokuapp.com";
+const cards = document.querySelectorAll('.card');
+const container = document.getElementById("Container");
+let currentCardClone = null;
 
-function exibirDetalhes(id) {
-  body.style.display = "none";
-  fetch(`${API_URL}/postagem/${id}`)
-    .then(result => result.json())
-    .then(result => {
-      const index = id; // Use o ID diretamente como índice
-      
-      document.querySelector(`.titulo-post${index}`).innerHTML = result.title;
-      document.querySelector(`.descricao-post${index}`).innerHTML = result.description;
-      document.querySelector(`.nome-criador${index}`).innerHTML = result.profileName;
-      const imgpost = `https://api-rest-post-diegocandido.herokuapp.com${result.thumbImage}`;
-      document.querySelector(`.img-post${index}`).src = imgpost;
-      document.querySelector(`.date${index}`).innerHTML = result.postDate;
-    });
+function displayCardInContainer(card) {
+    container.innerHTML = "";
+    
+    const clonedCard = card.cloneNode(true);
+    clonedCard.classList.add('card-clicked', 'centered');
+    
+    const backButton = document.createElement('button');
+    backButton.classList.add( 'btnVoltar');
+    backButton.textContent = 'Voltar';
+    
+    backButton.addEventListener('click', handleBackButtonClick);
+    
+    clonedCard.appendChild(backButton);
+    container.appendChild(clonedCard);
+    
+    cards.forEach(card => card.style.display = 'none');
+    
+    currentCardClone = clonedCard;
 }
 
-const buttons = document.querySelectorAll(".ver-mais");
+function handleCardClick(event) {
+    const clickedCard = event.currentTarget;
+    displayCardInContainer(clickedCard);
+}
 
-buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    exibirDetalhes(index + 1);
-  });
-});
+function handleBackButtonClick() {
+    cards.forEach(card => card.style.display = 'block');
+    container.innerHTML = "";
+    currentCardClone = null;
+}
+
+cards.forEach(card => card.addEventListener('click', handleCardClick));
