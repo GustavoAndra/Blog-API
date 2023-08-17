@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 *{
     margin: 0;
     padding: 0;
@@ -116,7 +115,6 @@ article p{
 ul{
 	list-style: none;
 }
-
 footer{
 	background-color: #000;
     color: #fff;
@@ -207,9 +205,9 @@ canvas {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
     line-height: 20px;
     margin: 0 5px 10px 0;
     overflow: visible;
